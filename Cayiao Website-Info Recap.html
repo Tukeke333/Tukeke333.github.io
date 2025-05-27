@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cayiao Website: Info Recap</title>
+    <style>
+        /* Fuente moderna */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #444;
+        }
+
+        input[type="text"], textarea, input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, textarea:focus, input[type="date"]:focus, input[type="time"]:focus {
+            border-color: #6a11cb;
+            outline: none;
+        }
+
+        /* Estilo unificado para todos los botones */
+        input[type="submit"], 
+        button,
+        input[type="button"] {
+            background: #6a11cb;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: auto;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        input[type="submit"]:hover, 
+        button:hover,
+        input[type="button"]:hover {
+            background: #2575fc;
+        }
+
+        .miembro, .evento {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+
+        /* Espaciado y alineación */
+        form > * {
+            margin-bottom: 20px;
+        }
+
+        form > *:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Firma */
+        .firma {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .firma img {
+            width: 50px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 Cayiao Website: Info Recap  🎵</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 20px; font-size: 0.9rem; font-style: italic;">En caso de no tener información, deja el campo en blanco o coloca "NA"</p>
+        <form action="https://formsubmit.co/tukeke333@gmail.com" method="POST">
+            <!-- Campos del formulario -->
+            <label for="nombre_grupo">🎸 Nombre de la Agrupación:</label>
+            <input type="text" id="nombre_grupo" name="nombre_grupo" value="Cayiao" readonly>
+
+            <label for="logo">🖼️ Enlace al Logotipo (si lo tienen):</label>
+            <input type="text" id="logo" name="logo" placeholder="Ej: https://ejemplo.com/logo.png">
+
+            <label for="genero">🎧 Género Musical Principal:</label>
+            <input type="text" id="genero" name="genero" placeholder="Ej: Rock, Pop, Salsa">
+
+            <label for="eslogan">💬 Eslogan o Frase Representativa:</label>
+            <input type="text" id="eslogan" name="eslogan" placeholder="Ej: 'La música que mueve almas'">
+
+            <!-- Descripción y Visión de la Agrupación -->
+            <label for="descripcion">📖 Descripción de la Agrupación:</label>
+            <textarea id="descripcion" name="descripcion" rows="5" placeholder="Describe la historia, estilo musical y valores de la agrupación."></textarea>
+
+            <label for="vision">🌟 Visión de la Agrupación:</label>
+            <textarea id="vision" name="vision" rows="5" placeholder="Describe los objetivos y aspiraciones de la agrupación."></textarea>
+
+            <!-- Sección de Miembros de la Banda -->
+            <h2>👥 Miembros de la Banda</h2>
+            <div id="miembros">
+                <div class="miembro">
+                    <label for="nombre1">👤 Nombre:</label>
+                    <input type="text" id="nombre1" name="nombre1" placeholder="Ej: Juan">
+
+                    <label for="apellido1">👤 Apellido:</label>
+                    <input type="text" id="apellido1" name="apellido1" placeholder="Ej: Pérez">
+
+                    <label for="rol1">🎸 Rol en la Banda:</label>
+                    <input type="text" id="rol1" name="rol1" placeholder="Ej: Guitarrista">
+
+                    <label for="descripcion1">📝 Breve Descripción:</label>
+                    <textarea id="descripcion1" name="descripcion1" rows="3" placeholder="Ej: Fundador de la banda, amante del rock clásico."></textarea>
+                </div>
+            </div>
+            <button type="button" onclick="agregarMiembro()">➕ Añadir Otro Miembro</button>
+
+            <!-- Eventos Pasados -->
+            <h2>Eventos Pasados</h2>
+            <div id="eventos-pasados">
+                <div class="evento">
+                    <label for="nombre-evento1">Nombre del Evento:</label>
+                    <input type="text" id="nombre-evento1" name="nombre-evento1">
+
+                    <label for="fecha-evento1">Fecha del Evento:</label>
+                    <input type="date" id="fecha-evento1" name="fecha-evento1">
+
+                    <label for="enlace-evento1">Enlace del Evento:</label>
+                    <input type="text" id="enlace-evento1" name="enlace-evento1" class="form-input">
+
+                    <label for="descripcion-evento1">Descripción del Evento:</label>
+                    <textarea id="descripcion-evento1" name="descripcion-evento1" rows="4"></textarea>
+
+                    <label for="fotos-evento1">Enlace para Fotos:</label>
+                    <input type="text" id="fotos-evento1" name="fotos-evento1" class="form-input">
+                </div>
+            </div>
+            <button type="button" onclick="agregarEventoPasado()">➕ Añadir Otro Evento</button>
+
+            <!-- Sección de Próximos Eventos y Conciertos -->
+            <h2>📅 Próximos Eventos y Conciertos</h2>
+            <div id="eventos">
+                <div class="evento">
+                    <label for="nombre-evento1">Nombre del Evento:</label>
+                    <input type="text" id="nombre-evento1" name="nombre-evento1">
+
+                    <label for="fecha-evento1">Fecha del Evento:</label>
+                    <input type="date" id="fecha-evento1" name="fecha-evento1">
+
+                    <label for="enlace-evento1">Enlace del Evento:</label>
+                    <input type="text" id="enlace-evento1" name="enlace-evento1" class="form-input">
+
+                    <label for="descripcion-evento1">Descripción del Evento:</label>
+                    <textarea id="descripcion-evento1" name="descripcion-evento1" rows="4"></textarea>
+
+                    <label for="fotos-evento1">Enlace para Fotos:</label>
+                    <input type="text" id="fotos-evento1" name="fotos-evento1" class="form-input">
+                </div>
+            </div>
+            <button type="button" onclick="agregarEvento()">➕ Añadir Otro Evento</button>
+
+            <label for="redes_sociales">📱 Redes Sociales:</label>
+            <textarea id="redes_sociales" name="redes_sociales" rows="5" placeholder="Pega los enlaces a Instagram, Facebook, Twitter, etc."></textarea>
+
+            <label for="contacto">📧 Información de Contacto:</label>
+            <textarea id="contacto" name="contacto" rows="5" placeholder="Correo electrónico, teléfono, dirección, etc."></textarea>
+
+            <label for="colores">🎨 Colores Preferidos para el Sitio:</label>
+            <input type="text" id="colores" name="colores" placeholder="Ej: Azul, Blanco, Negro">
+
+            <label for="comentarios">💡 Comentarios Adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="5" placeholder="¿Algo más que quieras agregar?"></textarea>
+
+            <!-- Botón Enviar -->
+            <input type="submit" value="Enviar">
+
+            <!-- Firma con estilo cyberpunk (más pequeña y sin fondo negro) -->
+            <div style="text-align: center; margin-top: 10px;">
+                <p style="font-family: 'Orbitron', sans-serif; font-size: 14px; color: #00ffcc; text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;">
+                    Made with love by Tukeke333
+                </p>
+                <img src="Tukeke333.png" alt="Tukeke333" style="width: 40px; height: auto; margin-top: 5px; border-radius: 50%; border: 1px solid #00ffcc; box-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function agregarMiembro() {
+            const miembrosContainer = document.getElementById('miembros');
+            const count = miembrosContainer.children.length + 1;
+            
+            const nuevoMiembro = document.createElement('div');
+            nuevoMiembro.className = 'miembro';
+            nuevoMiembro.innerHTML = `
+                <label for="nombre${count}">👤 Nombre:</label>
+                <input type="text" id="nombre${count}" name="nombre${count}" placeholder="Ej: Juan">
+
+                <label for="apellido${count}">👤 Apellido:</label>
+                <input type="text" id="apellido${count}" name="apellido${count}" placeholder="Ej: Pérez">
+
+                <label for="rol${count}">🎸 Rol en la Banda:</label>
+                <input type="text" id="rol${count}" name="rol${count}" placeholder="Ej: Guitarrista">
+
+                <label for="descripcion${count}">📝 Breve Descripción:</label>
+                <textarea id="descripcion${count}" name="descripcion${count}" rows="3" placeholder="Ej: Fundador de la banda, amante del rock clásico."></textarea>
+            `;
+            
+            miembrosContainer.appendChild(nuevoMiembro);
+        }
+
+        function agregarEvento() {
+            const eventosContainer = document.getElementById('eventos');
+            const count = eventosContainer.children.length + 1;
+            
+            const nuevoEvento = document.createElement('div');
+            nuevoEvento.className = 'evento';
+            nuevoEvento.innerHTML = `
+                <label for="nombre-evento${count}">Nombre del Evento:</label>
+                <input type="text" id="nombre-evento${count}" name="nombre-evento${count}">
+
+                <label for="fecha-evento${count}">Fecha del Evento:</label>
+                <input type="date" id="fecha-evento${count}" name="fecha-evento${count}">
+
+                <label for="enlace-evento${count}">Enlace del Evento:</label>
+                <input type="text" id="enlace-evento${count}" name="enlace-evento${count}" class="form-input">
+
+                <label for="descripcion-evento${count}">Descripción del Evento:</label>
+                <textarea id="descripcion-evento${count}" name="descripcion-evento${count}" rows="4"></textarea>
+
+                <label for="fotos-evento${count}">Enlace para Fotos:</label>
+                <input type="text" id="fotos-evento${count}" name="fotos-evento${count}" class="form-input">
+            `;
+            
+            eventosContainer.appendChild(nuevoEvento);
+        }
+
+        function agregarEventoPasado() {
+            const eventosPasadosContainer = document.getElementById('eventos-pasados');
+            const count = eventosPasadosContainer.children.length + 1;
+            
+            const nuevoEventoPasado = document.createElement('div');
+            nuevoEventoPasado.className = 'evento';
+            nuevoEventoPasado.innerHTML = `
+                <label for="nombre-evento${count}">Nombre del Evento:</label>
+                <input type="text" id="nombre-evento${count}" name="nombre-evento${count}">
+
+                <label for="fecha-evento${count}">Fecha del Evento:</label>
+                <input type="date" id="fecha-evento${count}" name="fecha-evento${count}">
+
+                <label for="enlace-evento${count}">Enlace del Evento:</label>
+                <input type="text" id="enlace-evento${count}" name="enlace-evento${count}" class="form-input">
+
+                <label for="descripcion-evento${count}">Descripción del Evento:</label>
+                <textarea id="descripcion-evento${count}" name="descripcion-evento${count}" rows="4"></textarea>
+
+                <label for="fotos-evento${count}">Enlace para Fotos:</label>
+                <input type="text" id="fotos-evento${count}" name="fotos-evento${count}" class="form-input">
+            `;
+            
+            eventosPasadosContainer.appendChild(nuevoEventoPasado);
+        }
+    </script>
+</body>
+</html>
